@@ -1,0 +1,17 @@
+[
+  {
+    "caption": "-",
+    "id": "csv2table"
+  },
+  {
+    "caption": "Paste Spreadsheet Cells",
+    "command": "csv_to_table"
+  },
+  {
+    "caption": "Paste Space Delimited Table",
+    "command": "csv_to_table",
+    "args": {
+      "delim": " "
+    }
+  }
+]
