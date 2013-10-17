@@ -39,12 +39,12 @@ class CsvToTableCommand(sublime_plugin.TextCommand):
         view = self.view
         # sublime.set_clipboard("a&bc\tedf few\nfew fefe\tfew")
         oldcb = sublime.get_clipboard()
-        cb = oldcb.strip()
+        cb = oldcb
         cb = re.sub("&", r"\&", cb, flags=re.M)
         cb = re.sub("%", r"\%", cb, flags=re.M)
         sel =  view.sel()
 
-        lines = [[s.strip() for s in re.split(r"(?<!\\)&", re.sub(delim + "+", r"&", line.strip(), flags=re.M))]
+        lines = [[s.strip() for s in re.split(r"(?<!\\)&", re.sub(delim, r"&", line, flags=re.M))]
                     for line in cb.split("\n")]
 
         nocol = max([len(line) for line in lines])
