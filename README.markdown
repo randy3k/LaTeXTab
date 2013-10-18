@@ -17,6 +17,8 @@ Usage (pictures are better than words).
 <img width='250' src="https://raw.github.com/randy3k/LaTeXTab/fig/excel2.png">
 <img width='500' src="https://raw.github.com/randy3k/LaTeXTab/fig/st2.png">
 
+Note: [How to select columns in Sublime Text?](http://www.sublimetext.com/docs/3/column_selection.html)
+
 ##Optional
 
 We may also want to consider this alignment plugin: [AlignTab](https://github.com/randy3k/AlignTab)
