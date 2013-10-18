@@ -45,7 +45,7 @@ class CsvToTableCommand(sublime_plugin.TextCommand):
         sel =  view.sel()
 
         lines = [[s.strip() for s in re.split(r"(?<!\\)&", re.sub(delim, r"&", line))]
-                    for line in cb.split("\n")]
+                    for line in cb.rstrip("\n").split("\n")]
 
         nocol = max([len(line) for line in lines])
         for line in lines:

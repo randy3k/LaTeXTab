@@ -3,6 +3,8 @@ LaTeXTab: CSV/Excel to LaTeX Table
 
 Installation via Package Control
 
+* It should work on all platfrom: OSX, Windows and Linux.
+
 Usage (pictures are better than words).
 
 ## Create Table
