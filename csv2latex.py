@@ -70,10 +70,10 @@ class CsvToTableCommand(sublime_plugin.TextCommand):
 
     def is_enabled(self):
         view = self.view
-        point = view.sel()[0].end()
+        point = view.sel()[0].end() if view.sel() else 0
         return view.score_selector(point, "text.tex.latex")>0
 
     def is_visible(self):
         view = self.view
-        point = view.sel()[0].end()
+        point = view.sel()[0].end() if view.sel() else 0
         return view.score_selector(point, "text.tex.latex")>0
