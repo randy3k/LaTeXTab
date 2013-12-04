@@ -14,7 +14,7 @@
         "caption": "Paste Space Delimited Table",
         "command": "csv_to_table",
         "args": {
-          "delim": " "
+          "delim": " +"
         }
       },
       {
