@@ -54,14 +54,16 @@ class CsvToTableCommand(sublime_plugin.TextCommand):
         for line in lines: update_colwidth(colwidth, line)
         for line in lines: fill_spaces(line, colwidth)
 
-
+        indentation = re.match("^(\s*)", view.substr(view.line(view.sel()[0]))).group(1)
         if self.add_double_bslash():
-            cb = " \\\\\n".join([" & ".join(line) for line in lines])+" \\\\"
+            cb = " \\\\\n".join([indentation + " & ".join(line) for line in lines])+" \\\\"
         else:
             cb = "\n".join([" & ".join(line) for line in lines])
 
         if self.make_table():
-            cb = "\\begin{tabular}{|" + "l"*nocol + "|}\n\\hline\n" + cb + "\n\\hline\n\\end{tabular}"
+            cb = "\\begin{tabular}{|" + "l"*nocol + "|}\n" + \
+                    indentation + "\\hline\n" + cb + "\n" + indentation + \
+                    "\\hline\n" + indentation + "\\end{tabular}"
 
         # print(cb)
         sublime.set_clipboard(cb)
