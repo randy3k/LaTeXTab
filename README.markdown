@@ -3,9 +3,9 @@ LaTeXTab: CSV/Excel to LaTeX Table
 
 Installation via Package Control
 
-* It should work on all platfrom: OSX, Windows and Linux.
+* It works on all platfroms: OSX, Windows and Linux.
 
-Usage (pictures are better than words).
+Usage (a picture is worth a thousand words).
 
 ## Create Table
 
@@ -17,8 +17,4 @@ Usage (pictures are better than words).
 <img width='250' src="https://raw.github.com/randy3k/LaTeXTab/fig/excel2.png">
 <img width='500' src="https://raw.github.com/randy3k/LaTeXTab/fig/st2.png">
 
-Note: [How to select columns in Sublime Text?](http://www.sublimetext.com/docs/3/column_selection.html)
-
-##Optional
-
-We may also want to consider this alignment plugin: [AlignTab](https://github.com/randy3k/AlignTab)
+See also: [How to select columns in Sublime Text?](http://www.sublimetext.com/docs/3/column_selection.html) and [AlignTab](https://github.com/randy3k/AlignTab).
