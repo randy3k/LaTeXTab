@@ -7,7 +7,7 @@
     "command": "csv_to_table"
   },
   {
-    "caption": "Paste Space Delimited Cells",
+    "caption": "Paste Space Delimited Table",
     "command": "csv_to_table",
     "args": {
       "delim": " +"
